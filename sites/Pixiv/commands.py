@@ -20,6 +20,9 @@ def pixiv_view(update, context):
         # use reverse proxy to avoid strange problems
         for img in imgs:
             img['url'] = img['url'].replace('i.pximg.net', IMG_PROXY)
+            img['url'] = img['url'].replace('img-original', 'img-master')
+            img['url'] = img['url'].replace('.jpg', '_master1200.jpg')
+            img['url'] = img['url'].replace('.png', '_master1200.jpg')
             img['url'] += '?' + str(random.random())
         sendPhotos(update, context, imgs, details)
     except (IndexError, ValueError):
