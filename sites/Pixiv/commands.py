@@ -23,7 +23,7 @@ def pixiv_view(update, context):
             img['url'] = img['url'].replace('img-original', 'img-master')
             img['url'] = img['url'].replace('.jpg', '_master1200.jpg')
             img['url'] = img['url'].replace('.png', '_master1200.jpg')
-            img['url'] += '?' + str(random.random())
+            #img['url'] += '?' + str(random.random())
         sendPhotos(update, context, imgs, details)
     except (IndexError, ValueError):
         message.reply_text('Usage: /pixiv <artwork_id>')
