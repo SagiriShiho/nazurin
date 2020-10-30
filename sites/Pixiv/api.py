@@ -148,10 +148,10 @@ class Pixiv(object):
             'title': illust.title,
             'author': illust.user.name,
             'tags': tags,
-            'total_bookmarks': illust.total_bookmarks,
+            #'total_bookmarks': illust.total_bookmarks,
             'url': 'pixiv.net/i/' + str(illust.id)
         }
-        details['bookmarked'] = illust.is_bookmarked
+        #details['bookmarked'] = illust.is_bookmarked
         return details
 
     def getFilename(self, url, illust):
