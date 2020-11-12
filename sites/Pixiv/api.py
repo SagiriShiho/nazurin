@@ -144,6 +144,7 @@ class Pixiv(object):
         tags = str()
         for tag in illust.tags:
             tags += '#' + tag.name + ' '
+            tags = tags.replace('Mona', '莫娜')
         details = {
             'title': illust.title,
             'author': illust.user.name,
