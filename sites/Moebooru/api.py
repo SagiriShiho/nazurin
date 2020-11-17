@@ -98,9 +98,50 @@ class Moebooru(object):
                 artists += tag + ' '
             else:
                 tag_string += '#' + tag + ' '
+            tag_string = tag_string.replace('(genshin_impact)', '')
+            tag_string = tag_string.replace('#klee_', '#可莉')
+            tag_string = tag_string.replace('#mona_', '#莫娜')
+            tag_string = tag_string.replace('#diona_', '#迪奥娜')
+            tag_string = tag_string.replace('#keqing_', '#刻晴')
+            tag_string = tag_string.replace('#qiqi_', '#七七')
+            tag_string = tag_string.replace('#paimon_', '#派蒙')
+            tag_string = tag_string.replace('#fischl_', '#皇女')
+            tag_string = tag_string.replace('#barbara_', '#芭芭拉')
+            tag_string = tag_string.replace('#noelle_', '#诺艾尔')
+            tag_string = tag_string.replace('#amber_', '#安柏')
+            tag_string = tag_string.replace('#lisa_', '#丽莎')
+            tag_string = tag_string.replace('#venti_', '#温迪')
+            tag_string = tag_string.replace('#sucrose_', '#砂糖')
+            tag_string = tag_string.replace('#jean_', '#琴')
+            tag_string = tag_string.replace('#ningguang_', '#凝光')
+            tag_string = tag_string.replace('#lumine_', '#荧')
+            tag_string = tag_string.replace('#loli_', '#萝莉')
+            tag_string = tag_string.replace('#uncensored_', '#无修正 #R18 #NSFW')
+            tag_string = tag_string.replace('#censored_', '#马赛克 #R18 #NSFW')
+            tag_string = tag_string.replace('#topless_', '#裸体 #R18 #NSFW')
+            tag_string = tag_string.replace('#klee', '#可莉')
+            tag_string = tag_string.replace('#mona', '#莫娜')
+            tag_string = tag_string.replace('#diona', '#迪奥娜')
+            tag_string = tag_string.replace('#keqing', '#刻晴')
+            tag_string = tag_string.replace('#qiqi', '#七七')
+            tag_string = tag_string.replace('#paimon', '#派蒙')
+            tag_string = tag_string.replace('#fischl', '#皇女')
+            tag_string = tag_string.replace('#barbara', '#芭芭拉')
+            tag_string = tag_string.replace('#noelle', '#诺艾尔')
+            tag_string = tag_string.replace('#amber', '#安柏')
+            tag_string = tag_string.replace('#lisa', '#丽莎')
+            tag_string = tag_string.replace('#venti', '#温迪')
+            tag_string = tag_string.replace('#sucrose', '#砂糖')
+            tag_string = tag_string.replace('#jean', '#琴')
+            tag_string = tag_string.replace('#ningguang', '#凝光')
+            tag_string = tag_string.replace('#lumine', '#荧')
+            tag_string = tag_string.replace('#loli', '#萝莉')
+            tag_string = tag_string.replace('#uncensored', '#无修正 #R18 #NSFW')
+            tag_string = tag_string.replace('#censored', '#马赛克 #R18 #NSFW')
+            tag_string = tag_string.replace('#topless', '#裸体 #R18 #NSFW')
         details = dict()
-        if title:
-            details['title'] = title
+        #if title:
+        #    details['title'] = title
         if artists:
             details['artists'] = artists
         details['url'] = 'https://'+ self.url + '/post/show/' + str(post['id'])
