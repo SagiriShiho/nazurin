@@ -1,3 +1,4 @@
+import random
 from .api import Moebooru
 from utils import sendPhotos, sendDocuments, handleBadRequest, NazurinError
 from telegram.ext import CommandHandler
@@ -13,6 +14,11 @@ def yandere_view(update, context):
             message.reply_text('Invalid post id!')
             return
         imgs, details = moebooru.site('yande.re').view(post_id)
+        # use reverse proxy to avoid strange problems
+        for img in imgs:
+            img['url'] = img['url'].replace('/image', '/sample')
+            img['url'] = img['url'].replace('.png', '.jpg')
+            img['url'] += '?' + str(random.random())
         sendPhotos(update, context, imgs, details)
     except (IndexError, ValueError):
         message.reply_text('Usage: /yandere <post_id>')
@@ -43,6 +49,11 @@ def konachan_view(update, context):
             message.reply_text('Invalid post id!')
             return
         imgs, details = moebooru.site('konachan.com').view(post_id)
+        # use reverse proxy to avoid strange problems
+        for img in imgs:
+            img['url'] = img['url'].replace('/image', '/sample')
+            img['url'] = img['url'].replace('.png', '.jpg')
+            img['url'] += '?' + str(random.random())
         sendPhotos(update, context, imgs, details)
     except (IndexError, ValueError):
         message.reply_text('Usage: /konachan <post_id>')
