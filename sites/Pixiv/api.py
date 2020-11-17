@@ -158,6 +158,8 @@ class Pixiv(object):
             tags = tags.replace('#keqing', '#刻晴')
             tags = tags.replace('#qiqi', '#七七')
             tags = tags.replace('#パイモン', '#派蒙')
+            tags = tags.replace('#Paimon', '#派蒙')
+            tags = tags.replace('#paimon', '#派蒙')
             tags = tags.replace('#フィッシュル', '#皇女')
             tags = tags.replace('#Fischl', '#皇女')
             tags = tags.replace('#fischl', '#皇女')
