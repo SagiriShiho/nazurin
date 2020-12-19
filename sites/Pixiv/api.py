@@ -177,7 +177,6 @@ class Pixiv(object):
             tags = tags.replace('#amber', '#安柏')
             tags = tags.replace('#Ganyu ', '#甘雨')
             tags = tags.replace('#ganyu ', '#甘雨')
-            tags = tags.replace('#', '#甘雨')
             tags = tags.replace('#リサ', '#丽莎')
             tags = tags.replace('#ガイア', '#凯亚')
             tags = tags.replace('#レザー', '#雷泽')
