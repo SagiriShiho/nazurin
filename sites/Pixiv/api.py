@@ -183,6 +183,7 @@ class Pixiv(object):
             tags = tags.replace('#ガイア', '#凯亚')
             tags = tags.replace('#レザー', '#雷泽')
             tags = tags.replace('#雷蛍術師', '#雷萤术士')
+            tags = tags.replace('#神里綾華', '#神里绫华')
             tags = tags.replace('#ウェンティ', '#温迪')
             tags = tags.replace('#スクロース', '#砂糖')
             tags = tags.replace('#ジン', '#琴')
