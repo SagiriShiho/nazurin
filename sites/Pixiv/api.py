@@ -190,6 +190,7 @@ class Pixiv(object):
             tags = tags.replace('#R-18G', '#R18G #NSFW')
             tags = tags.replace('#R-18', '#R18 #NSFW')
             tags = tags.replace('#GenshinImpact', '')
+            tags = tags.replace('#Genshin', '')
             tags = tags.replace('(原神)', '')
             tags = tags.replace('#可莉 #可莉', '#可莉')
             tags = tags.replace('#莫娜 #莫娜', '#莫娜')
