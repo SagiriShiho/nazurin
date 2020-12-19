@@ -195,6 +195,7 @@ class Pixiv(object):
             tags = tags.replace('#原神Project ', '')
             tags = tags.replace('(原神)', '')
             tags = tags.replace('(GenshinImpact)', '')
+            tags = tags.replace('(genshinimpact)', '')
             tags = tags.replace('#可莉 #可莉', '#可莉')
             tags = tags.replace('#莫娜 #莫娜', '#莫娜')
             tags = tags.replace('#迪奥娜 #迪奥娜', '#迪奥娜')
