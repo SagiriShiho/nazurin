@@ -195,6 +195,7 @@ class Pixiv(object):
             tags = tags.replace('#Hutao', '#胡桃')
             tags = tags.replace('#hutao', '#胡桃')
             tags = tags.replace('#hu_tao', '#胡桃')
+            tags = tags.replace('#HuTao ', '#胡桃')
             tags = tags.replace('#ロサリア', '#罗莎莉亚')
             tags = tags.replace('#Rosaria', '#罗莎莉亚')
             tags = tags.replace('#rosaria', '#罗莎莉亚')
